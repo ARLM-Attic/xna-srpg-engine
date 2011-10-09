@@ -79,13 +79,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Fonts\Pericles6.spritefont">
-      <Name>Pericles6</Name>
-      <Importer>FontDescriptionImporter</Importer>
-      <Processor>FontDescriptionProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Textures\Utility\mousemap.png">
       <Name>mousemap</Name>
       <Importer>TextureImporter</Importer>
@@ -107,10 +100,21 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Xbox360GameLibrary1\StrategyRPG.XboxLibrary.csproj">
+    <ProjectReference Include="..\StrategyRPG.Library\StrategyRPG.WindowsLibrary.csproj">
+      <Project>{E18C4547-8A36-4905-9F5E-1C2F2EC5C1B5}</Project>
+      <Name>StrategyRPG.WindowsLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StrategyRPG.Library\StrategyRPG.XboxLibrary.csproj">
       <Project>{046465DB-133F-48DA-B627-9AAABFA7E539}</Project>
       <Name>StrategyRPG.XboxLibrary</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Fonts\Pericles6.spritefont">
+      <Name>Pericles6</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
   <!--  To modify your build process, add your task inside one of the targets below and uncomment it. 
