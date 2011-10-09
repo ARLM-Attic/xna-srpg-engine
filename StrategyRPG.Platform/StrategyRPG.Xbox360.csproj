@@ -17,7 +17,8 @@
     <XnaCrossPlatformGroupID>aa8c6b78-5220-4fd0-9311-31232ff0b839</XnaCrossPlatformGroupID>
     <XnaOutputType>Game</XnaOutputType>
     <ApplicationIcon>Game.ico</ApplicationIcon>
-    <Thumbnail>GameThumbnail.png</Thumbnail>
+    <Thumbnail>
+    </Thumbnail>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -62,14 +63,14 @@
     <XnaCompressContent>true</XnaCompressContent>
   </PropertyGroup>
   <ItemGroup>
+    <ProjectReference Include="..\StrategyRPG.Content\StrategyRPG.Content.contentproj">
+      <Project>{E115E0BE-59D8-4951-82D7-EF1478AE1243}</Project>
+      <Name>StrategyRPG.Content %28Content%29</Name>
+      <XnaReferenceType>Content</XnaReferenceType>
+    </ProjectReference>
     <ProjectReference Include="..\StrategyRPG.Library\StrategyRPG.XboxLibrary.csproj">
       <Project>{046465DB-133F-48DA-B627-9AAABFA7E539}</Project>
       <Name>StrategyRPG.XboxLibrary</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\StrategyRPGContent\StrategyRPG.Content.contentproj">
-      <Name>StrategyRPG.Content %28Content%29</Name>
-      <XnaReferenceType>Content</XnaReferenceType>
-      <Project>{E115E0BE-59D8-4951-82D7-EF1478AE1243}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -79,7 +80,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Game.ico" />
-    <Content Include="GameThumbnail.png" />
+    <Content Include="isometricCube.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
